@@ -36,6 +36,7 @@ public class PruebaNetflixTest {
             String expectedLogin = "Login with Facebook";
 
             Assert.assertEquals(fbLogin, expectedLogin);
+            Thread.sleep(2000);
 
         }
 
@@ -82,7 +83,7 @@ public class PruebaNetflixTest {
 
         @AfterTest
         public void endTest() throws InterruptedException {
-            Thread.sleep(4000);
+            Thread.sleep(3000);
             driver.close();
         }
 }
