@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Examen">
+
+    <groups>
+        <run>
+            <include name = "questions"></include>
+            <include name = "netflix"></include>
+        </run>
+    </groups>
+
+    <test name = "Examen">
+        <classes>
+            <class name="InterviewQuestionSiteTest"/>
+            <class name = "PruebaNetflixTest"></class>
+        </classes>
+    </test>
+</suite>
